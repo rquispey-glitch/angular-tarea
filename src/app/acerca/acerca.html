@@ -1,0 +1,24 @@
+<div class="contenedor">
+  <div class="tarjeta">
+    <h2>Acerca de esta aplicación</h2>
+    <p>
+      Esta es una simple lista de tareas desarrollada con Angular.
+      Permite agregar, completar y eliminar tareas.
+    </p>
+    <div class="botones">
+      <button (click)="toggleCaracteristicas()">
+        {{ mostrarCaracteristicas ? 'Ocultar' : 'Ver' }} características
+      </button>
+    </div>
+
+    <div *ngIf="mostrarCaracteristicas" class="caracteristicas">
+      <h3>Características</h3>
+      <ul>
+        <li>✅ Agregar tareas</li>
+        <li>✅ Marcar como completadas</li>
+        <li>✅ Eliminar tareas</li>
+        <li>✅ Interfaz responsiva</li>
+      </ul>
+    </div>
+  </div>
+</div>
